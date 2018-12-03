@@ -8,23 +8,23 @@ namespace Module2_2
         static void Main(string[] args)
         {
 
+            StringBuilder sb = new StringBuilder();
             Console.WriteLine("How many fruits: ");
 
             int number = int.Parse(Console.ReadLine());
-            StringBuilder sb = new StringBuilder();
             char spis = ' ';
 
-                          for (int i = 1; i > number; i++)
-                                   {
-                                        Console.Write("Enter fruit: ");
-                                          string frukt = Console.ReadLine();
-                                              sb.Append(frukt+spis); 
-                                    }
+              for (int i = 0; i < number; i++)
+              {
+                Console.Write("Enter fruit: ");
+                string frukt = Console.ReadLine();
+                sb.Append(frukt+spis); 
+              }
 
             string result = sb.ToString();
-            result.Trim(',');
-            Console.WriteLine($"      {result}       ");
-            Console.WriteLine(spis);
+            result.Trim(spis);
+            Console.WriteLine($"{result}");
+            Console.WriteLine(result);
 
         }
     }
