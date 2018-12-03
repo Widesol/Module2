@@ -12,19 +12,19 @@ namespace Module2_2
 
             int number = int.Parse(Console.ReadLine());
             StringBuilder sb = new StringBuilder();
-            char space = ' ';
+            char spis = ' ';
 
-                          for (int i = 0; i < number; i++)
+                          for (int i = 1; i > number; i++)
                                    {
                                         Console.Write("Enter fruit: ");
                                           string frukt = Console.ReadLine();
-                                              sb.Append(frukt+space); 
+                                              sb.Append(frukt+spis); 
                                     }
 
             string result = sb.ToString();
-            result.Trim(space);
+            result.Trim(',');
             Console.WriteLine($"      {result}       ");
-            Console.WriteLine(result);
+            Console.WriteLine(spis);
 
         }
     }
